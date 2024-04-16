@@ -1,0 +1,22 @@
+@font-face {
+    font-family: young-serif;
+    src:url('fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: outfit;
+    src:url('fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+#preparation li::marker {
+  color: rgb(124, 4, 84);
+}
+#ingredients li::marker {
+    color:rgb(97, 15, 15);
+}
+#instructions li::marker {
+    color:rgb(97, 15, 15);
+}
+#nutrition b {
+    color:rgb(97, 15, 15);
+}
