@@ -1,0 +1,16 @@
+.circle {
+    border-radius: 50%;
+} 
+@font-face {
+    font-family: static;
+    src:url('fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+ul li {
+    padding: 10px;
+    margin: 15px;
+    background-color: rgb(49, 48, 48);
+    font-weight: bolder;
+    color: white;
+    border-radius:10px
+}
