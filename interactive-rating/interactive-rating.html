@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>interactive rating</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="interactive-rating.css">
+        <style type="text/css">
+            .overpass-regular {
+                font-family: "Overpass", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .overpass-bold {
+                font-family: "Overpass", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="row" style="height: 100vh;">
+                <div class="col-19 col-xs-17 col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4 bg-xdark-blue px-5 py-4 rounded-5" id="rates">
+                    <img src="images/icon-star.svg" class="bg-dark-blue rounded-circle p-2">
+                    <h2 class="text-light overpass-bold">How did we do?</h2>
+                    <p class="text-light-gray overpass-regular lh-5">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                    <div class="row my-5">
+                        <button type="button" onclick="chooseRate(this)" class="rate-btn col-3 text-decoration-none border-0 rounded-circle bg-dark-blue mx-1 px-4 py-3 text-light">1</button>
+                        <button type="button" onclick="chooseRate(this)" class="rate-btn col-3 text-decoration-none border-0 rounded-circle bg-dark-blue mx-1 px-4 py-3 text-light">2</button>
+                        <button type="button" onclick="chooseRate(this)" class="rate-btn col-3 text-decoration-none border-0 rounded-circle bg-dark-blue mx-1 px-4 py-3 text-light">3</button>
+                        <button type="button" onclick="chooseRate(this)" class="rate-btn col-3 text-decoration-none border-0 rounded-circle bg-dark-blue mx-1 px-4 py-3 text-light">4</button>
+                        <button type="button" onclick="chooseRate(this)" class="rate-btn col-3 text-decoration-none border-0 rounded-circle bg-dark-blue mx-1 px-4 py-3 text-light">5</button>
+                        <button type="submit" onclick="showThanks()" class="text-uppercase text-light submit d-block rounded-pill bg-orange mx-auto overpass-regular py-2 mt-5 col-18">Submit</button>
+                    </div>
+                </div>
+
+
+                <div class="col-19 col-xs-17 col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4 bg-xdark-blue px-5 py-4 rounded-5 text-center" id="thanks" style="display: none;">
+                    <img class="d-block mx-auto my-4" src="images/illustration-thank-you.svg" alt="thank you">
+                    <p class="bg-dark-blue overpass-regular text-orange p-2 rounded-pill mx-auto my-5" style="width: 60%;">You selected <span id="rateValue"></span> out of 5</p>
+                    <h2 class="text-light overpass-bold my-5">Thank you! </h2>
+                    <p class="text-light-gray lh-5 overpass-regular">
+                        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+                    </p>
+                </div>
+            </div>
+        </main>
+        <script src="interactive-rating.js"></script>
+    </body>
+</html>
