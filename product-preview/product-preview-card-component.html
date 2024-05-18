@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Preview Card</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Overpass&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:wght@700&family=Overpass&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="product-preview.css">
+        <style type="text/css">
+            .ff-Montserrat {
+                font-family: 'Montserrat',sans-serif;
+                font-weight: 500;
+            }
+            .ff-Fraunces {
+                font-family: 'Fraunces', sans-serif;
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <main style="height: 100vh;display: flex;">
+            <div class="col-xs-18 col-sm-16 col-md-12 col-lg-10 col-xl-8 col-xxl-5 mx-auto " style="align-self: center;">
+                <div class="row mt-5">
+                    <div class="col-18 col-xs-14 col-sm-10">
+                        <img class="d-none d-sm-block rounded-start-2 img-fluid" src="images/image-product-desktop.jpg" alt="chanel-perfume">
+                        <img class="d-block d-sm-none rounded-top-2 img-fluid" src="images/image-product-mobile.jpg" alt="chanel-perfume">
+                    </div>
+    
+                    <div class="col-18 col-xs-14 col-sm-10 bg-light rounded-end-sm-2 rounded-bottom-2 rounded-bottom-sm-0 py-3 px-4">
+                        <p class="text-grayish-blue ff-Montserrat" style="letter-spacing: 5px;">PERFUME</p>
+                        <h3 class="text-dark-blue ff-Fraunces" style="font-size: 30px;">Gabrielle Essence Eau De Parfum</h3>
+                        <p class="text-grayish-blue lh-4 ff-Montserrat">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL. </p>
+                        <div class="text-dark-cyan"><span class="ff-Fraunces" style="font-size: 30px;">$149.99</span>&nbsp;&nbsp;<sup class="text-grayish-blue" style="text-decoration: line-through;">$169.99</sup></div>
+                        <a href="#" class="add-cart ff-Montserrat bg-dark-cyan btn rounded-2 py-2 my-3 d-block text-center text-light" style="width: 95%;"><img src="images/icon-cart.svg">&nbsp;&nbsp;&nbsp;Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
