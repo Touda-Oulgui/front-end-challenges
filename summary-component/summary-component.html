@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Summary Component</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:wght@700&family=Overpass:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="summary-component.css">
+    </head>
+    <body class="bg-pale-blue">
+        <main>
+            <img class="d-block d-sm-none position-absolute top-0 left-0 width-100" src="images/pattern-background-mobile.svg">
+            <img class="d-none d-sm-block position-absolute top-0 left-0 width-100" src="images/pattern-background-desktop.svg">
+            <div class="d-flex vh-100 position-relative">
+                <div class="col-18 col-xs-12 col-sm-10 col-md-8 col-lg-7 col-xl-5 col-xxl-4 rounded-3 mx-auto align-self-center bg-light">
+                    <img class="img-fluid rouned-top-3" src="images/illustration-hero.svg" alt="hero">
+                    <div class="py-4 px-5 text-center mx-2">
+                        <h2 class="text-dark-blue red-hat-display-900">Order Summary</h2>
+                        <p class="text-gray red-hat-display-500">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like! </p>
+                        <div class="row my-5 bg-x-pale-blue py-4 rounded-2">
+                            <img class="col-3" src="images/icon-music.svg" alt="icon-music">
+                            <div class="col-9 pl-4">
+                                <span class="text-dark-blue d-inline-block mb-1 red-hat-display-700">Annual Plan </span>
+                                <span class="text-gray d-inline-block red-hat-display-500">$59.99/year</span>
+                            </div>
+                            <a class="col-6 text-right d-block hover-change text-blue red-hat-display-700" href="#">Change </a>
+                        </div>
+                        <a href="#" class="d-block text-light bg-blue text-decoration-none p-2 rounded-2 my-4 shadow hover-pay red-hat-display-700">Proceed to Payment </a>
+                        <a href="#" class="text-gray d-block text-decoration-none mb-1 hover-cancel red-hat-display-700">Cancel Order</a>
+                        <cite class="red-hat-display-500">Challenge by Frontend Mentor. Coded by Touda Oulguirah.</cite>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
