@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+//variables
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+$dark-Blue: hsl(234, 12%, 34%);
+$gray-blue: hsl(229, 6%, 66%);
+$light-gray: hsl(0, 0%, 98%);
+
+body {
+    background-color:$light-gray;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1,h2 {
+    margin: 0;
+    font-weight: normal;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: $dark-Blue;
+}
+h1 {
+    font-size: 23px;
+}
+h2 {
+    font-size: 18px;
+}
+p {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color:$gray-blue;
+    font-size: 15px;
+}
+header {
+    text-align: center;
+    padding: 10px;
+}
+header h1:first-child {
+    font-weight: 400;
+}
+header h1:nth-child(2) {
+    font-weight: 900;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    background-color: white;
+    box-shadow: 10px 10px 20px $gray-blue; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 6px;
+}
+.card img {
+    display: block;
+    float: right;
+    margin-top: 18px;
+    max-width: 100%;
+    height: auto;
+    width: 15%;
+}
+.card h2 {
+    font-weight: 700;
+}
+#cards-section > .card:nth-child(1) {
+    border-top: 5px solid $cyan;
+}
+.column .card:nth-child(1) {
+    border-top: 5px solid $red;
+}
+.column .card:nth-child(2) {
+    border-top: 5px solid $orange;
+}
+#cards-section .card:nth-child(3) {
+    border-top: 5px solid $blue;
+}
+//spacing
+.my-5 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.mt-4 {
+    margin-top: 20px;
+}
+.mb-8 {
+    margin-bottom: 40px;
+}
+
+//Grid system
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row::after {
+    content:"";
+    display: block;
+    clear:both;
+}
+
+.col-1{width:5%;}
+.col-2{width:10%;}
+.col-3{width:15%;}
+.col-4{width:20%;}
+.col-5{width:25%;}
+.col-6{width:30%;}
+.col-7{width:35%;}
+.col-8{width:40%;}
+.col-9{width:45%;}
+.col-10{width:50%;}
+.col-11{width:55%;}
+.col-12{width:60%;}
+.col-13{width:65%;}
+.col-14{width:70%;}
+.col-15{width:75%;}
+.col-16{width:80%;}
+.col-17{width:85%;}
+.col-18{width:90%;}
+.col-19{width:95%;}
+.col-20{width:100%;}
+
+@media only screen and (min-width:376px) {
+    .col-xs-1{width:5%;}
+    .col-xs-2{width:10%;}
+    .col-xs-3{width:15%;}
+    .col-xs-4{width:20%;}
+    .col-xs-5{width:25%;}
+    .col-xs-6{width:30%;}
+    .col-xs-7{width:35%;}
+    .col-xs-8{width:40%;}
+    .col-xs-9{width:45%;}
+    .col-xs-10{width:50%;}
+    .col-xs-11{width:55%;}
+    .col-xs-12{width:60%;}
+    .col-xs-13{width:65%;}
+    .col-xs-14{width:70%;}
+    .col-xs-15{width:75%;}
+    .col-xs-16{width:80%;}
+    .col-xs-17{width:85%;}
+    .col-xs-18{width:90%;}
+    .col-xs-19{width:95%;}
+    .col-xs-20{width:100%;}
+}
+@media only screen and (min-width:610px) {
+    .col-sm-1{width:5%;}
+    .col-sm-2{width:10%;}
+    .col-sm-3{width:15%;}
+    .col-sm-4{width:20%;}
+    .col-sm-5{width:25%;}
+    .col-sm-6{width:30%;}
+    .col-sm-7{width:35%;}
+    .col-sm-8{width:40%;}
+    .col-sm-9{width:45%;}
+    .col-sm-10{width:50%;}
+    .col-sm-11{width:55%;}
+    .col-sm-12{width:60%;}
+    .col-sm-13{width:65%;}
+    .col-sm-14{width:70%;}
+    .col-sm-15{width:75%;}
+    .col-sm-16{width:80%;}
+    .col-sm-17{width:85%;}
+    .col-sm-18{width:90%;}
+    .col-sm-19{width:95%;}
+    .col-sm-20{width:100%;}
+}
+@media only screen and (min-width:768px) {
+    .col-md-1{width:5%;}
+    .col-md-2{width:10%;}
+    .col-md-3{width:15%;}
+    .col-md-4{width:20%;}
+    .col-md-5{width:25%;}
+    .col-md-6{width:30%;}
+    .col-md-7{width:35%;}
+    .col-md-8{width:40%;}
+    .col-md-9{width:45%;}
+    .col-md-10{width:50%;}
+    .col-md-11{width:55%;}
+    .col-md-12{width:60%;}
+    .col-md-13{width:65%;}
+    .col-md-14{width:70%;}
+    .col-md-15{width:75%;}
+    .col-md-16{width:80%;}
+    .col-md-17{width:85%;}
+    .col-md-19{width:95%;}
+    .col-md-20{width:100%;}
+}
+@media only screen and (min-width:992px) {
+    .col-lg-1{width:5%;}
+    .col-lg-2{width:10%;}
+    .col-lg-3{width:15%;}
+    .col-lg-4{width:20%;}
+    .col-lg-5{width:25%;}
+    .col-lg-6{width:30%;}
+    .col-lg-7{width:35%;}
+    .col-lg-8{width:40%;}
+    .col-lg-9{width:45%;}
+    .col-lg-10{width:50%;}
+    .col-lg-11{width:55%;}
+    .col-lg-12{width:60%;}
+    .col-lg-13{width:65%;}
+    .col-lg-14{width:70%;}
+    .col-lg-15{width:75%;}
+    .col-lg-16{width:80%;}
+    .col-lg-17{width:85%;}
+    .col-lg-19{width:95%;}
+    .col-lg-20{width:100%;}
+
+    .align-items-lg-center {
+        align-items: center;
+    }
+    .my-lg-0 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .m-lg-2 {
+        margin: 10px;
+    }
+    .mb-lg-5 {
+        margin-bottom: 25px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .col-xl-1{width:5%;}
+    .col-xl-2{width:10%;}
+    .col-xl-3{width:15%;}
+    .col-xl-4{width:20%;}
+    .col-xl-5{width:25%;}
+    .col-xl-6{width:30%;}
+    .col-xl-7{width:35%;}
+    .col-xl-8{width:40%;}
+    .col-xl-9{width:45%;}
+    .col-xl-10{width:50%;}
+    .col-xl-11{width:55%;}
+    .col-xl-12{width:60%;}
+    .col-xl-13{width:65%;}
+    .col-xl-14{width:70%;}
+    .col-xl-15{width:75%;}
+    .col-xl-16{width:80%;}
+    .col-xl-17{width:85%;}
+    .col-xl-19{width:95%;}
+    .col-xl-20{width:100%;}
+}
+@media only screen and (min-width:1400px) {
+    .col-xxl-1{width:5%;}
+    .col-xxl-2{width:10%;}
+    .col-xxl-3{width:15%;}
+    .col-xxl-4{width:20%;}
+    .col-xxl-5{width:25%;}
+    .col-xxl-6{width:30%;}
+    .col-xxl-7{width:35%;}
+    .col-xxl-8{width:40%;}
+    .col-xxl-9{width:45%;}
+    .col-xxl-10{width:50%;}
+    .col-xxl-11{width:55%;}
+    .col-xxl-12{width:60%;}
+    .col-xxl-13{width:65%;}
+    .col-xxl-14{width:70%;}
+    .col-xxl-15{width:75%;}
+    .col-xxl-16{width:80%;}
+    .col-xxl-17{width:85%;}
+    .col-xxl-19{width:95%;}
+    .col-xxl-20{width:100%;}
+}
