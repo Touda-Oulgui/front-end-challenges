@@ -90,6 +90,20 @@ header h1:nth-child(2) {
 #cards-section .card:nth-child(3) {
     border-top: 5px solid $blue;
 }
+footer code {
+    text-align: center;
+    color: $dark-Blue;
+    font-size: 13px;
+    margin: 10px auto;
+    padding: 5px;
+    display: block;
+}
+footer code span {
+    color: $orange;
+    font-weight: 600;
+    font-size: 15px;
+}
+
 //spacing
 .my-5 {
     margin-top: 25px;
